@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <h1 class="mt-3 p-2">Sorting Visualizer</h1>
+  <!-- <p>Current Status: This project has several known issues that I'm actively working to improve, including optimizing performance and enhancing the user interface for a better experience.</p> -->
+
+    <!-- Buttons to control the visualization -->
+    <div class="controls">
+            <button type="button" class="btn btn-primary" id="generateArray">Generate New Array</button>
+            <button type="button" class="btn btn-primary" id="pauseButton" onclick="togglePause()">Pause</button>
+            <button type="button" class="btn btn-primary" id="resetButton" onclick="resetArray()">Reset</button>
+ 
+        <button type="button" class="btn btn-primary" id="bubbleSort">Bubble Sort</button>
+        <button type="button" class="btn btn-primary" id="insertionSort">Insertion Sort</button>
+        <button type="button" class="btn btn-primary" id="selectionSort">Selection Sort</button>
+ 
+    </div>
+    
+
+    <!-- Array container -->
+    <div id="arrayContainer"></div>
+<div>
+    <p>Here you generateArray and see how the basic sorting algorithms are work</p>
+</div>
+<div>
+    <a class="nav-link active" aria-current="page" href="mayank.html">
+        <button type="button" class="btn btn-primary" id="generateArray">Enter your Own Values</button>
+    </a>
+</div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+#arrayContainer {
+    display:  flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 400px;
+    width: 90%;
+    border: 1px solid rgb(3, 3, 3);
+}
+
+ 
+ 
+.bar {
+    position: relative;
+    margin: 0 2px;
+    background-color: steelblue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+}
+
+.bar-text {
+    position: absolute;
+    bottom: 5px;  /* Adjust positioning so it's close to the bottom of the bar */
+    color: white;
+    font-size: 12px;  /* Adjust font size if needed */
+    z-index: 1;  /* Ensure the text stays above the bar */
+}

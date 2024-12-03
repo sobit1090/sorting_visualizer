@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sorting Visualizer</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="Enter your own value/css/bootstrap.css">
+        <script src="Enter your own value/js/bootstrap.bundle.js"></script>
+    </head>
+<body>
+    <h1 class="mt-3 p-2">Sorting Visualizer</h1>
+
+    <!-- Controls for Sorting -->
+    <div class="controls">
+        <a class="nav-link active" aria-current="page" href="index.html">
+            <button type="button" class="btn btn-primary" id="generateArray">Generate Random Values</button>
+        </a>
+        <button type="button" class="btn btn-primary" id="pauseButton" onclick="togglePause()">Pause</button>
+        <button type="button" class="btn btn-primary" id="resetButton" onclick="resetArray()">Reset</button>
+        <button type="button" class="btn btn-primary" id="bubbleSort">Bubble Sort</button>
+        <button type="button" class="btn btn-primary" id="insertionSort">Insertion Sort</button>
+        <button type="button" class="btn btn-primary" id="selectionSort">Selection Sort</button>
+    </div>
+    <!-- Manual Input for Array -->
+    
+    <!-- Array Visualization -->
+    <div id="arrayContainer" ></div>
+    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+        <label for="userValues" style="font-size: 16px; margin-right: 10px;">Enter Values (comma-separated):</label>
+        <input 
+            type="text" 
+            id="userValues" 
+            placeholder="e.g., 5, 10, 15, 20" 
+            style="height: 40px; width: 50%; padding: 5px; font-size: 14px; border: 1px solid #ccc; border-radius: 5px;">
+        <button 
+            type="button" 
+            id="submitValues" 
+            style="height: 40px; padding: 0 15px; margin-left: 10px; font-size: 14px; border: none; background-color: rgb(32, 125, 201); color: white; border-radius: 5px; cursor: pointer;">
+            Submit
+        </button>
+    </div>
+    <p>Please Enter the value Below 120</p>
+
+    <script src="./script2.js"></script>
+</body>
+</html>
