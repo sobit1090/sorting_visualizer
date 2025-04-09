@@ -1,15 +1,42 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    background-color: #0e395f;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-h1 {
+h1,p {
     margin-bottom: 20px;
+    color: #9aacb9;
+    border: #000;
 }
 
+.btn-custom {
+    
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid black;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.375rem;
+    transition: all 0.15s ease-in-out;
+    background-color: #98b1c5;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .btn-custom:hover {
+    cursor: pointer;
+    background-color: #466f8e;
+    border-radius: 0.375rem;
+    transition: all 0.15s ease-in-out;
+    color: #000000;
+  }
 .controls {
     margin-bottom: 20px;
     display: flex;
@@ -19,28 +46,36 @@ h1 {
 }
 
 #arrayContainer {
-    display: flex;
+    background-color:#98b1c5;
+    display:  flex;
     justify-content: center;
     align-items: flex-end;
     height: 400px;
+    padding: 7px;
     width: 90%;
+    border-radius: 5px;
     border: 1px solid rgb(3, 3, 3);
 }
 
-.bar {
-    position: relative;
-    margin: 0 2px;
-    background-color: steelblue;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    color: white;
-}
 
+
+ 
+.bar {
+    border-radius: 2px;
+  position: relative;
+  margin: 0 2px;
+  border: solid #000 1px;
+  background-color: steelblue;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+   color: white;
+}
 .bar-text {
     position: absolute;
     bottom: 5px;  /* Adjust positioning so it's close to the bottom of the bar */
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 12px;  /* Adjust font size if needed */
     z-index: 1;  /* Ensure the text stays above the bar */
 }
